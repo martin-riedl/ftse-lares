@@ -19,7 +19,7 @@ lazy val commonSettings = Seq(
   scalaVersion := "2.11.8"
 )
 
-lazy val base = ProjectRef(file("../base/"),"base")
+lazy val base = ProjectRef(file("../ftse-base/"),"base")
 
 lazy val lares = (project in file(".")).
   dependsOn(base).
